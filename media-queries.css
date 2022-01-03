@@ -2,26 +2,39 @@
     border: black 1px solid;
     padding: 15px 5px 15px 5px;
     text-align: center;
-    background-color: lightskyblue;
+    background-color: #ccffff;
     text-decoration: none;
 }
 
-.alert-info a{
+.alert-info a {
     text-decoration: none;
     color: black;
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 3.5em;
     margin-top: 2px;
 }
-.nav-links{
+
+.nav-links {
     display: flex;
     flex-direction: column;
     list-style: none;
 }
-.nav-links li{
-    background-color: grey;
+
+.nav-links li {
+    background-color: #cccccc;
     text-align: center;
+    margin-bottom: 10px;
+    padding: 15px 0 15px 0;
 }
+
+ul {
+    padding: 0;
+}
+
+.header-img img {
+    max-width: 100%;
+}
+

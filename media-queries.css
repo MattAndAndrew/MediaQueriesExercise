@@ -38,51 +38,84 @@ ul {
     max-width: 100%;
 }
 
-.main h2{
+.main h2 {
     margin-bottom: 5px;
 }
 
-.main p{
+.main p {
     margin-top: 5px;
 }
 
-.sub-section h2{
+.sub-section h2 {
     font-style: italic;
     margin-bottom: 5px;
 }
-.sub-section p{
+
+.sub-section p {
     font-style: italic;
     margin-top: 5px;
     margin-bottom: 100px;
 }
 
-body{
+body {
     font-family: Helvetica, monospace;
 }
 
 @media screen and (min-width: 992px) {
-    body{
+    body {
+        box-sizing: border-box;
+        position: relative;
         margin: 0 20px 0 20px;
+        min-height: 100vh;
     }
-    .hidden-on-desktop{
+
+    .hidden-on-desktop {
         display: none;
     }
-    h1{
+
+    h1 {
         float: left;
         margin-top: 10px;
     }
-    .nav-links{
+
+    .nav-links {
         display: flex;
         flex-direction: row;
         float: right;
     }
-    .nav-links li{
+
+    .nav-links li {
         background-color: white;
         padding: 30px 5px 0 5px;
     }
+
     .header-img {
         clear: both;
         text-align: center;
     }
 
+    .header-img img {
+        width: 100%;
+    }
+
+}
+
+.main {
+    display: inline-block;
+    float: left;
+    width: calc(60% - 20px);
+    padding-right: 20px;
+    height: 100%;
+}
+
+.sub-section {
+    display: inline-block;
+    /*float: right;*/
+    width: 40%;
+    height: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
 }
